@@ -17,8 +17,14 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post" translatesAutoresizingMaskIntoConstraints="NO" id="kQj-7Z-oWg">
+                    <rect key="frame" x="0.0" y="194" width="414" height="310.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="kQj-7Z-oWg" secondAttribute="height" multiplier="4:3" id="0BL-wE-HSa"/>
+                    </constraints>
+                </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHK-Cy-pr8">
-                    <rect key="frame" x="186" y="437.5" width="42" height="21"/>
+                    <rect key="frame" x="20" y="524.5" width="42" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -26,11 +32,17 @@
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="cHK-Cy-pr8" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Gyh-ld-Uvw"/>
-                <constraint firstItem="cHK-Cy-pr8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fAL-dl-xTS"/>
+                <constraint firstItem="cHK-Cy-pr8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="5cj-oQ-iXJ"/>
+                <constraint firstItem="kQj-7Z-oWg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="HmP-0f-JRQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kQj-7Z-oWg" secondAttribute="trailing" id="Szg-jY-YcC"/>
+                <constraint firstItem="kQj-7Z-oWg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="150" id="bOJ-j0-dFW"/>
+                <constraint firstItem="cHK-Cy-pr8" firstAttribute="top" secondItem="kQj-7Z-oWg" secondAttribute="bottom" constant="20" id="pQP-zI-f0K"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="139" y="108"/>
+            <point key="canvasLocation" x="137.68115942028987" y="107.8125"/>
         </view>
     </objects>
+    <resources>
+        <image name="post" width="790" height="500"/>
+    </resources>
 </document>

@@ -17,34 +17,27 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wmn-aZ-NE4">
-                    <rect key="frame" x="30" y="398" width="354" height="100"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wmn-aZ-NE4">
+                    <rect key="frame" x="30" y="423" width="354" height="50"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="100" id="fid-Nf-BNE"/>
+                        <constraint firstAttribute="height" constant="50" id="fid-Nf-BNE"/>
                     </constraints>
-                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="13U-YC-UtC">
-                    <rect key="frame" x="30" y="498" width="354" height="1"/>
+                    <rect key="frame" x="30" y="473" width="354" height="1"/>
                     <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="SWW-bk-Sd4"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="編集" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftG-UN-RF9">
-                    <rect key="frame" x="30" y="357" width="35" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQA-QV-r8M">
-                    <rect key="frame" x="166" y="547" width="82" height="36"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                    <state key="normal" title="削除する">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQA-QV-r8M">
+                    <rect key="frame" x="292" y="524" width="92" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="投稿を削除">
                         <color key="titleColor" red="0.74048776390000004" green="0.74497202009999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
@@ -56,12 +49,12 @@
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="13U-YC-UtC" secondAttribute="trailing" constant="30" id="Gqi-Iv-YkZ"/>
                 <constraint firstItem="13U-YC-UtC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="HEL-4d-MTM"/>
-                <constraint firstItem="wmn-aZ-NE4" firstAttribute="top" secondItem="ftG-UN-RF9" secondAttribute="bottom" constant="20" id="URW-tq-88J"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mQA-QV-r8M" secondAttribute="trailing" constant="30" id="WHn-9B-LkV"/>
                 <constraint firstItem="13U-YC-UtC" firstAttribute="top" secondItem="wmn-aZ-NE4" secondAttribute="bottom" id="X9g-oO-Oyx"/>
                 <constraint firstItem="wmn-aZ-NE4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="c3h-Lj-wwJ"/>
-                <constraint firstItem="ftG-UN-RF9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="ciW-dl-9JH"/>
                 <constraint firstItem="wmn-aZ-NE4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="rdb-AT-mYY"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wmn-aZ-NE4" secondAttribute="trailing" constant="30" id="sgr-6n-ASy"/>
+                <constraint firstItem="mQA-QV-r8M" firstAttribute="top" secondItem="13U-YC-UtC" secondAttribute="bottom" constant="50" id="vzM-ja-qyh"/>
                 <constraint firstItem="wmn-aZ-NE4" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="wGA-jb-KnR"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
