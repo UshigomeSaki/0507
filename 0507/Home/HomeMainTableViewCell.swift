@@ -17,6 +17,8 @@ class HomeMainTableViewCell: BaseTableViewCell {
     weak var delegate: HomeMainTableViewCellDelegate? = nil
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var iconView: UIImageView!
+    
+    var postModel : PostModel = PostModel()
 }
 // MARK: - Life cycle
 extension HomeMainTableViewCell {
@@ -32,5 +34,8 @@ extension HomeMainTableViewCell {
 extension HomeMainTableViewCell {
     func setLayout(){
         iconView.layer.cornerRadius = 25
+    }
+    func updateCell(postModel:PostModel){
+        descriptionLabel.text = postModel.description
     }
 }
