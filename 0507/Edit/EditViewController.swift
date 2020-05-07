@@ -36,7 +36,12 @@ extension EditViewController :HeaderViewDelegate{
         dismiss(animated: true, completion: nil)
     }
     func touchedRightButton(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
+        if let text = mainView.textView.text{
+            postModel.description = text
+        }
+        PostModel.update(request: postModel) {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
 }
 // MARK: - method
