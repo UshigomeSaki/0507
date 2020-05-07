@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="_507" customModuleProvider="target">
+            <connections>
+                <outlet property="headerView" destination="l41-Vi-RYT" id="qy0-gF-cmZ"/>
+                <outlet property="mainView" destination="SwO-Ge-JFR" id="luc-23-ei1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l41-Vi-RYT" customClass="HeaderView" customModule="PGFramework">
+                    <rect key="frame" x="0.0" y="44" width="414" height="48"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="hne-Mh-Xwo"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SwO-Ge-JFR" customClass="HomeMainView" customModule="_507" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="l41-Vi-RYT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="DnT-XW-XRX"/>
+                <constraint firstItem="SwO-Ge-JFR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KKR-nc-PTQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SwO-Ge-JFR" secondAttribute="trailing" id="OTA-z2-sGm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="l41-Vi-RYT" secondAttribute="trailing" id="gnd-1X-0EU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="SwO-Ge-JFR" secondAttribute="bottom" id="nBj-Tg-Q6U"/>
+                <constraint firstItem="l41-Vi-RYT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ux2-aa-rcw"/>
+                <constraint firstItem="SwO-Ge-JFR" firstAttribute="top" secondItem="l41-Vi-RYT" secondAttribute="bottom" id="wfr-cr-5nR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="36" y="107"/>
+        </view>
+    </objects>
+</document>

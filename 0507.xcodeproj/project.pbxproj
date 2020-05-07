@@ -3,11 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		853B0C537D23BEBEBAE064B1 /* Pods_0507.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABCC43F24EDE0814F7313D87 /* Pods_0507.framework */; };
+		FF1A06AE2463AC8800ED3B8B /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A06AD2463AC8800ED3B8B /* PostModel.swift */; };
+		FF1A06B22463ACF500ED3B8B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A06B02463ACF500ED3B8B /* HomeViewController.swift */; };
+		FF1A06B32463ACF500ED3B8B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A06B12463ACF500ED3B8B /* HomeViewController.xib */; };
+		FF1A06B62463AEC700ED3B8B /* HomeMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A06B42463AEC700ED3B8B /* HomeMainView.swift */; };
+		FF1A06B72463AEC700ED3B8B /* HomeMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A06B52463AEC700ED3B8B /* HomeMainView.xib */; };
+		FF1A06BB2463AFF700ED3B8B /* HomeMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A06B92463AFF700ED3B8B /* HomeMainTableViewCell.swift */; };
+		FF1A06BC2463AFF700ED3B8B /* HomeMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A06BA2463AFF700ED3B8B /* HomeMainTableViewCell.xib */; };
+		FF1A06C02463B61800ED3B8B /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A06BE2463B61700ED3B8B /* NewPostViewController.swift */; };
+		FF1A06C12463B61800ED3B8B /* NewPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A06BF2463B61700ED3B8B /* NewPostViewController.xib */; };
+		FF1A06C42463B64300ED3B8B /* NewPostMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A06C22463B64300ED3B8B /* NewPostMainView.swift */; };
+		FF1A06C52463B64300ED3B8B /* NewPostMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1A06C32463B64300ED3B8B /* NewPostMainView.xib */; };
 		FF7304BB24639A3F008452DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7304BA24639A3F008452DA /* AppDelegate.swift */; };
 		FF7304BD24639A3F008452DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7304BC24639A3F008452DA /* SceneDelegate.swift */; };
 		FF7304C224639A3F008452DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF7304C024639A3F008452DA /* Main.storyboard */; };
@@ -20,6 +31,17 @@
 		288869A24CAFD67949159006 /* Pods-0507.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-0507.debug.xcconfig"; path = "Target Support Files/Pods-0507/Pods-0507.debug.xcconfig"; sourceTree = "<group>"; };
 		3F4F7D59ED624A04C5D0FC50 /* Pods-0507.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-0507.release.xcconfig"; path = "Target Support Files/Pods-0507/Pods-0507.release.xcconfig"; sourceTree = "<group>"; };
 		ABCC43F24EDE0814F7313D87 /* Pods_0507.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_0507.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1A06AD2463AC8800ED3B8B /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		FF1A06B02463ACF500ED3B8B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FF1A06B12463ACF500ED3B8B /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		FF1A06B42463AEC700ED3B8B /* HomeMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainView.swift; sourceTree = "<group>"; };
+		FF1A06B52463AEC700ED3B8B /* HomeMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeMainView.xib; sourceTree = "<group>"; };
+		FF1A06B92463AFF700ED3B8B /* HomeMainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainTableViewCell.swift; sourceTree = "<group>"; };
+		FF1A06BA2463AFF700ED3B8B /* HomeMainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeMainTableViewCell.xib; sourceTree = "<group>"; };
+		FF1A06BE2463B61700ED3B8B /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
+		FF1A06BF2463B61700ED3B8B /* NewPostViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewPostViewController.xib; sourceTree = "<group>"; };
+		FF1A06C22463B64300ED3B8B /* NewPostMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostMainView.swift; sourceTree = "<group>"; };
+		FF1A06C32463B64300ED3B8B /* NewPostMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewPostMainView.xib; sourceTree = "<group>"; };
 		FF7304B724639A3F008452DA /* 0507.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 0507.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF7304BA24639A3F008452DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF7304BC24639A3F008452DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +70,6 @@
 				288869A24CAFD67949159006 /* Pods-0507.debug.xcconfig */,
 				3F4F7D59ED624A04C5D0FC50 /* Pods-0507.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -58,6 +79,38 @@
 				ABCC43F24EDE0814F7313D87 /* Pods_0507.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF1A06AC2463AC6900ED3B8B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A06AD2463AC8800ED3B8B /* PostModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF1A06AF2463ACE500ED3B8B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A06B02463ACF500ED3B8B /* HomeViewController.swift */,
+				FF1A06B12463ACF500ED3B8B /* HomeViewController.xib */,
+				FF1A06B42463AEC700ED3B8B /* HomeMainView.swift */,
+				FF1A06B52463AEC700ED3B8B /* HomeMainView.xib */,
+				FF1A06B92463AFF700ED3B8B /* HomeMainTableViewCell.swift */,
+				FF1A06BA2463AFF700ED3B8B /* HomeMainTableViewCell.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FF1A06BD2463B5FE00ED3B8B /* NewPost */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A06BE2463B61700ED3B8B /* NewPostViewController.swift */,
+				FF1A06BF2463B61700ED3B8B /* NewPostViewController.xib */,
+				FF1A06C22463B64300ED3B8B /* NewPostMainView.swift */,
+				FF1A06C32463B64300ED3B8B /* NewPostMainView.xib */,
+			);
+			path = NewPost;
 			sourceTree = "<group>";
 		};
 		FF7304AE24639A3F008452DA = {
@@ -81,6 +134,9 @@
 		FF7304B924639A3F008452DA /* 0507 */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A06BD2463B5FE00ED3B8B /* NewPost */,
+				FF1A06AF2463ACE500ED3B8B /* Home */,
+				FF1A06AC2463AC6900ED3B8B /* Model */,
 				FF7304BA24639A3F008452DA /* AppDelegate.swift */,
 				FF7304BC24639A3F008452DA /* SceneDelegate.swift */,
 				FF7304C024639A3F008452DA /* Main.storyboard */,
@@ -153,9 +209,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF7304C724639A40008452DA /* LaunchScreen.storyboard in Resources */,
+				FF1A06C12463B61800ED3B8B /* NewPostViewController.xib in Resources */,
 				FF7304CF24639AD4008452DA /* GoogleService-Info.plist in Resources */,
+				FF1A06BC2463AFF700ED3B8B /* HomeMainTableViewCell.xib in Resources */,
+				FF1A06B72463AEC700ED3B8B /* HomeMainView.xib in Resources */,
+				FF1A06B32463ACF500ED3B8B /* HomeViewController.xib in Resources */,
 				FF7304C424639A40008452DA /* Assets.xcassets in Resources */,
 				FF7304C224639A3F008452DA /* Main.storyboard in Resources */,
+				FF1A06C52463B64300ED3B8B /* NewPostMainView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,8 +269,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1A06C42463B64300ED3B8B /* NewPostMainView.swift in Sources */,
 				FF7304BB24639A3F008452DA /* AppDelegate.swift in Sources */,
+				FF1A06AE2463AC8800ED3B8B /* PostModel.swift in Sources */,
 				FF7304BD24639A3F008452DA /* SceneDelegate.swift in Sources */,
+				FF1A06C02463B61800ED3B8B /* NewPostViewController.swift in Sources */,
+				FF1A06B62463AEC700ED3B8B /* HomeMainView.swift in Sources */,
+				FF1A06B22463ACF500ED3B8B /* HomeViewController.swift in Sources */,
+				FF1A06BB2463AFF700ED3B8B /* HomeMainTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
