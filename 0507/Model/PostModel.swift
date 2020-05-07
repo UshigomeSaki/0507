@@ -62,3 +62,19 @@ extension PostModel{
     }
 }
 
+//MARK: Update
+extension PostModel{
+    static func update(request:PostModel,success:@escaping() -> Void){
+        let id = request.id
+        let dbRef = Database.database().reference().child(PATH).child(id)
+        let parameter = setParameter(request: request)
+        dbRef.updateChildValues(parameter){(error,dbRef)in
+            if error != nil {
+                print("updateエラー",error)
+            }else{
+                success()
+            }
+        }
+    }
+}
+
