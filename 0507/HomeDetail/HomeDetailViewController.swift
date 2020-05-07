@@ -27,6 +27,7 @@ extension HomeDetailViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        getModel()
         updateLabel()
     }
 }
@@ -55,6 +56,14 @@ extension HomeDetailViewController {
     }
     func updateLabel(){
         mainView.descriptionLabel.text = postModel.description
+    }
+    func getModel(){
+        PostModel.readAt(id: postModel.id, success: { (postModel) in
+            self.postModel = postModel
+        }) {
+            self.navigationController?.popViewController(animated: true)
+            self.animatorManager.navigationType = .slide_pop
+        }
     }
 }
 

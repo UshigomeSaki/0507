@@ -44,6 +44,16 @@ extension EditViewController :HeaderViewDelegate{
         }
     }
 }
+
+extension EditViewController:EditMainViewDelegate{
+    func touchedDeleteButton() {
+        PostModel.delete(id: postModel.id) {
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    
+}
 // MARK: - method
 extension EditViewController {
     func giveModel(){
@@ -55,6 +65,7 @@ extension EditViewController {
     }
     func setDelegate(){
         headerView.delegate = self
+        mainView.delegate = self
     }
 }
 
